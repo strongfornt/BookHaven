@@ -8,7 +8,7 @@ export default function Banner() {
         <div className="hero-content flex-col  lg:flex-row-reverse gap-10">
           <img src={banner} className="max-w-sm h-96 rounded-lg " />
           <div className="space-y-8">
-            <h1 className="text-5xl font-bold max-w-lg ">
+            <h1 className=" text-2xl lg:text-5xl font-bold max-w-lg ">
               Books to freshen up your bookshelf
             </h1>
 

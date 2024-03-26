@@ -32,11 +32,11 @@ export default function BooksDetails() {
     <>
       <section className=" ">
         <div className="container flex flex-col justify-center px-6 py-4   mx-auto sm:py-12 lg:py-10 lg:flex-row ">
-          <div className="flex items-center rounded-lg bg-[#1313130D] justify-center lg:mt-0 h-[90vh]   xl:h-112 2xl:h-128">
+          <div className="flex items-center rounded-lg bg-[#1313130D] justify-center lg:mt-0 lg:h-[90vh]   xl:h-112 2xl:h-128">
             <img
               src={image}
               alt=""
-              className="object-contain h-full   p-10  xl:h-112 2xl:h-128"
+              className="object-contain  lg:h-full   p-10  xl:h-112 2xl:h-128"
             />
           </div>
           <div className="flex flex-col justify-center mt-5 lg:mt-0 lg:ml-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left space-y-3">
