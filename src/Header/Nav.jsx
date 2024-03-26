@@ -58,7 +58,7 @@ export default function Nav() {
               </NavLink>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">BookVibe</a>
+          <a className="btn btn-ghost text-xl">BookHaven</a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 gap-5 items-center ">
