@@ -61,36 +61,54 @@ export default function Nav() {
           <a className="btn btn-ghost text-xl">BookHaven</a>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1 gap-5 items-center ">
+          <ul className="menu menu-horizontal px-1 gap-4 items-center ">
             <NavLink
               to="/"
               className={({ isActive }) =>
                 isActive
-                  ? "border btn btn-sm bg-transparent border-success text-success text-base font-bold "
+                  ? " text-success text-base font-bold "
                   : "text-base text-black/60 font-bold "
               }
             >
-              <p className="">Home</p>
+              <p className="relative group overflow-hidden">
+                Home
+                <span
+                  className="h-[2px] -translate-x-44  group-hover:translate-x-0 transition-transform duration-300
+                   w-full bg-[#23BE0A] inline-flex absolute left-0 bottom-0"
+                />
+              </p>
             </NavLink>
             <NavLink
               to="/listedBooks"
               className={({ isActive }) =>
                 isActive
-                  ? "border btn btn-sm bg-transparent border-success text-success text-base font-bold "
+                  ? "  text-success text-base font-bold "
                   : "text-base text-black/60 font-bold "
               }
             >
-              <p>Listed Books</p>
+              <p className="relative group overflow-hidden   ">
+                Listed Books
+                <span
+                  className="h-[2px] -translate-x-44  group-hover:translate-x-0 transition-transform duration-300
+                   w-full bg-[#23BE0A] inline-flex absolute left-0 bottom-0"
+                />
+              </p>
             </NavLink>
             <NavLink
               to="/toRead"
               className={({ isActive }) =>
                 isActive
-                  ? "border btn btn-sm border-success bg-transparent text-success text-base font-bold "
+                  ? "text-success text-base font-bold "
                   : "text-base text-black/60 font-bold "
               }
             >
-              <p>Pages to Read</p>
+              <p className="relative group overflow-hidden">
+                Pages to Read
+                <span
+                  className="h-[2px] -translate-x-44  group-hover:translate-x-0 transition-transform duration-300
+                   w-full bg-[#23BE0A] inline-flex absolute left-0 bottom-0"
+                />
+              </p>
             </NavLink>
           </ul>
         </div>
