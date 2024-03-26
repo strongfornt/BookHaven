@@ -7,22 +7,19 @@ import WishList from "../Components/ReadAndWish/WishList";
 
 export default function BookListTabs() {
   const [tabIndex, setTabIndex] = useState(0);
-  const [readData,setReadData] = useState([]);  
-  const [wishList,setWishList] = useState([]);  
-  useEffect(()=>{
+  const [readData, setReadData] = useState([]);
+  const [wishList, setWishList] = useState([]);
+  useEffect(() => {
     const getReadData = getStoredBook();
     setReadData(getReadData);
-  },[])
+  }, []);
   console.log(readData);
 
-  useEffect(()=>{
+  useEffect(() => {
     const getWishListData = getStoredWishlist();
-    setWishList(getWishListData)
-  },[])
+    setWishList(getWishListData);
+  }, []);
   console.log(wishList);
-
-
-
 
   return (
     <>
@@ -31,19 +28,19 @@ export default function BookListTabs() {
           <Tab>Read Books</Tab>
           <Tab>Wishlist Books</Tab>
         </TabList>
-        <TabPanel> 
-                <div>
-                    {
-                        readData.map((read,idx) => <ReadList key={idx}  readData={read} /> )
-                    }
-                </div>
-             </TabPanel>
-        <TabPanel> 
-        <div>
-                    {
-                        wishList.map((read,idx) => <WishList key={idx}  wishList={read} /> )
-                    }
-                </div>
+        <TabPanel>
+          <div>
+            {readData.map((read, idx) => (
+              <ReadList key={idx} readData={read} />
+            ))}
+          </div>
+        </TabPanel>
+        <TabPanel>
+          <div>
+            {wishList.map((read, idx) => (
+              <WishList key={idx} wishList={read} />
+            ))}
+          </div>
         </TabPanel>
       </Tabs>
     </>

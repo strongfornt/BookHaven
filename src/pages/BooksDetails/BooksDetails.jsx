@@ -63,7 +63,7 @@ export default function BooksDetails() {
                 <h1 className="text-sm font-bold text-[#131313]">Tag</h1>
                 <div className="flex gap-3 items-center">
                   {tags.map((tag, idx) => (
-                    <button key={idx} className="btn btn-sm text-[#23BE0A]">
+                    <button key={idx} className="btn btn-sm text-[#23BE0A] bg-[#23BE0A0D]">
                       #{tag}
                     </button>
                   ))}
