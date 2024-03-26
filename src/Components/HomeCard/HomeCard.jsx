@@ -8,14 +8,14 @@ export default function HomeCard({ book }) {
 
   return (
     <>
-     <Link to={`/book/${bookId}`}>
-     <div className=" p-6 rounded-md shadow-md border-t flex flex-col ">
+     <Link to={`/book/${bookId}`} className="">
+     <div className=" p-6 rounded-md shadow-md border-t  ">
         <img
           src={image}
           alt=""
           className="object-contain object-center w-full rounded-md h-72 "
         />
-        <div className="mt-6 mb-2">
+        <div className="mt-6 mb-2 ">
           <div className="flex gap-3">
             {tags.map((item, idx) => (
               <span
@@ -28,12 +28,12 @@ export default function HomeCard({ book }) {
           </div>
           <h2 className="text-xl font-semibold tracking-wide ">{bookName}</h2>
         </div>
-        <h1 className="text-sm text-[#131313CC] font-bold mb-2 flex-grow">
-          By : <span>{author}</span>
+        <h1 className="text-sm text-[#131313CC] font-bold mb-2  ">
+          By : <span  >{author}</span>
         </h1>
 
-        <div className="flex justify-between border-t border-[#13131326] pt-2">
-          <p className="text-sm  font-semibold text-[#131313CC]">{category}</p>
+        <div className="flex justify-between border-t border-[#13131326] pt-2  ">
+          <p className="text-sm  font-semibold text-[#131313CC]  ">{category}</p>
           <p className="flex items-center gap-1">
             <span className="text-sm text-[#131313CC]">{rating}</span>
             <FcRating />
