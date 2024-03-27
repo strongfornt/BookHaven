@@ -93,6 +93,24 @@ export default function Nav() {
                 />
               </p>
             </NavLink>
+
+            <li className="mt-5">
+            <a className="relative inline-flex items-center justify-start border border-success btn btn-sm cursor-pointer overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group">
+            <span className="w-48 h-48 rounded rotate-[-40deg] bg-success absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+            <span className="relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white">
+              Sign in
+            </span>
+          </a>
+         
+            </li>
+            <li>
+            <a className="relative inline-flex items-center justify-start border border-info btn btn-sm overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group">
+            <span className="w-48 h-48 rounded rotate-[-40deg] bg-info absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+            <span className="relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white">
+              Sign up
+            </span>
+          </a>
+            </li>
           </ul>
           <div>
             <a className="font-extrabold text-success/75 text-2xl">
@@ -154,38 +172,6 @@ export default function Nav() {
             </NavLink>
           </ul>
         </div>
-        {/* dropdown  ----------------------*/}
-        <div className="flex-none navbar-end lg:hidden">
-          <ul className="menu menu-horizontal px-1">
-            <li>
-              <details>
-                <summary className=" bg-gradient-to-r from-success/75 to-info/75 text-white  font-bold  ">
-                  <BiLogInCircle className="text-lg " />
-                </summary>
-                <ul className="p-2 border-[#23BE0A0D] border rounded-lg z-10 min-w-max space-y-2">
-                  <li>
-                    <a className="relative inline-flex items-center justify-start border border-success btn btn-sm cursor-pointer overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group">
-                      <span className="w-48 h-48 rounded rotate-[-40deg] bg-success absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
-                      <span className="relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white">
-                        Sign in
-                      </span>
-                    </a>
-                  </li>
-                  <li>
-                    <a className="relative inline-flex items-center justify-start border border-info btn btn-sm overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group">
-                      <span className="w-48 h-48 rounded rotate-[-40deg] bg-info absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
-                      <span className="relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white">
-                        Sign up
-                      </span>
-                    </a>
-                  </li>
-                </ul>
-              </details>
-            </li>
-          </ul>
-        </div>
-        {/* dropdown  ----------------------*/}
-
         <div className="navbar-end gap-2 hidden lg:flex">
           <a className="relative inline-flex items-center justify-start border border-success btn btn-sm cursor-pointer overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group">
             <span className="w-48 h-48 rounded rotate-[-40deg] bg-success absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
