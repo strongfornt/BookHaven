@@ -5,16 +5,15 @@ export default function Error() {
     <>
       <section className="flex items-center h-full p-16  text-gray-600">
         <div className="container flex flex-col items-center justify-center px-5 mx-auto my-8">
-          <div className="max-w-md text-center">
-            <h2 className="mb-8 font-extrabold text-9xl text-gray-600">
+          <div className="max-w-xl text-center">
+            <h2 className="mb-8 font-extrabold text-9xl text-red-600">
               <span className="sr-only">Error</span>404
             </h2>
             <p className="text-2xl font-semibold md:text-3xl">
               Sorry, we couldn't find this page.
             </p>
             <p className="mt-4 mb-8 text-gray-400">
-              But dont worry, you can find plenty of other things on our
-              homepage.
+            Looks like we hit a bump in the digital highway. Hang tight while we clear the road ahead and get you back on track."
             </p>
             <Link 
               to='/'

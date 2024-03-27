@@ -7,10 +7,10 @@ export default function MainLayout() {
     const navigation = useNavigation();
   return (
     <>
-        <header className="px-4 lg:px-10">
+        <header className="  ">
             <Nav/>
         </header>
-        <main className="px-4 lg:px-10 mt-5" >
+        <main className="px-4 lg:px-10 mt-5 " >
             {
                 navigation.state === 'loading'? <Spinner/> : <Outlet/>
             }

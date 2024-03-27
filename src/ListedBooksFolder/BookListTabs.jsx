@@ -4,6 +4,7 @@ import "react-tabs/style/react-tabs.css";
 import { getStoredBook, getStoredWishlist } from "../utils/LocalStorage";
 import ReadList from "../Components/ReadAndWish/ReadList";
 import WishList from "../Components/ReadAndWish/WishList";
+import NotFoundData from "../Components/NotFoundData/NotFoundData";
 
 export default function BookListTabs() {
   const [tabIndex, setTabIndex] = useState(0);
@@ -81,18 +82,24 @@ export default function BookListTabs() {
           <Tab>Wishlist Books</Tab>
         </TabList>
         <TabPanel>
-          <div>
-            {readData.map((read, idx) => (
+          {
+            readData.length < 1 ? <NotFoundData/> :<div>
+            {readData?.map((read, idx) => (
               <ReadList key={idx} readData={read} />
             ))}
           </div>
+          }
+          
         </TabPanel>
         <TabPanel>
-          <div>
-            {wishList.map((read, idx) => (
+          {
+            wishList.length < 1 ? <NotFoundData/> : <div>
+            {wishList?.map((read, idx) => (
               <WishList key={idx} wishList={read} />
             ))}
           </div>
+          }
+         
         </TabPanel>
       </Tabs>
     </>

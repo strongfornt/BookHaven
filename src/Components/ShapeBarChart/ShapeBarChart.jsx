@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { useEffect, useState } from "react";
+
 import {
   BarChart,
   Bar,
@@ -9,15 +9,10 @@ import {
   CartesianGrid,
   Tooltip,
 } from "recharts";
-import { getStoredBook } from "../../utils/LocalStorage";
 
-export default function ShapeBarChart() {
-  const [readData, setReadData] = useState([]);
 
-  useEffect(() => {
-    const getReadData = getStoredBook();
-    setReadData(getReadData);
-  }, []);
+export default function ShapeBarChart({readData}) {
+ 
 
   const TriangleBar = (props) => {
     const { fill, x, y, width, height } = props;
