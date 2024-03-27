@@ -40,7 +40,7 @@ export default function Nav() {
           </div>
           <ul
             tabIndex={0}
-            className={`menu absolute top-10 -left-60  menu-sm    text-xl  dropdown-content border-r border-t border-b border-success border-opacity-60 
+            className={`menu absolute top-10 -left-60  menu-sm lg:hidden   text-xl  dropdown-content border-r border-t border-b border-success border-opacity-60 
                mt-3 z-[1] p-2 shadow-xl bg-base-100 rounded-r-xl w-max  gap-3 py-5  ${
                  menu && "-left-[16px] duration-300  "
                }`}
@@ -49,8 +49,8 @@ export default function Nav() {
               to="/"
               className={({ isActive }) =>
                 isActive
-                  ? " text-success text-base font-bold "
-                  : "text-base text-black/60 font-bold "
+                  ? " text-success text-base font-medium "
+                  : "text-base text-black/60 font-medium "
               }
             >
               <p className="relative group overflow-hidden">
@@ -81,8 +81,8 @@ export default function Nav() {
               to="/toRead"
               className={({ isActive }) =>
                 isActive
-                  ? "text-success text-base font-bold "
-                  : "text-base text-black/60 font-bold "
+                  ? "text-success text-base font-medium "
+                  : "text-base text-black/60 font-medium "
               }
             >
               <p className="relative group overflow-hidden">
@@ -97,8 +97,8 @@ export default function Nav() {
               to="/GetTouch"
               className={({ isActive }) =>
                 isActive
-                  ? "text-success text-base font-bold "
-                  : "text-base text-black/60 font-bold "
+                  ? "text-success text-base font-medium "
+                  : "text-base text-black/60 font-medium "
               }
             >
               <p className="relative group overflow-hidden">
@@ -141,8 +141,8 @@ export default function Nav() {
               to="/"
               className={({ isActive }) =>
                 isActive
-                  ? " text-success text-base font-bold "
-                  : "text-base text-black/60 font-bold "
+                  ? " text-success text-base font-medium "
+                  : "text-base text-black/60 font-medium "
               }
             >
               <p className="relative group overflow-hidden">
@@ -157,8 +157,8 @@ export default function Nav() {
               to="/listedBooks"
               className={({ isActive }) =>
                 isActive
-                  ? "  text-success text-base font-bold "
-                  : "text-base text-black/60 font-bold "
+                  ? "  text-success text-base font-medium "
+                  : "text-base text-black/60 font-medium "
               }
             >
               <p className="relative group overflow-hidden   ">
@@ -173,8 +173,8 @@ export default function Nav() {
               to="/toRead"
               className={({ isActive }) =>
                 isActive
-                  ? "text-success text-base font-bold "
-                  : "text-base text-black/60 font-bold "
+                  ? "text-success text-base font-medium "
+                  : "text-base text-black/60 font-medium "
               }
             >
               <p className="relative group overflow-hidden">
@@ -189,8 +189,8 @@ export default function Nav() {
               to="/toRead"
               className={({ isActive }) =>
                 isActive
-                  ? "text-success text-base font-bold "
-                  : "text-base text-black/60 font-bold "
+                  ? "text-success text-base font-medium "
+                  : "text-base text-black/60 font-medium "
               }
             >
               <p className="relative group overflow-hidden">
@@ -205,8 +205,8 @@ export default function Nav() {
               to="/GetTouch"
               className={({ isActive }) =>
                 isActive
-                  ? "text-success text-base font-bold "
-                  : "text-base text-black/60 font-bold "
+                  ? "text-success text-base font-medium "
+                  : "text-base text-black/60 font-medium "
               }
             >
               <p className="relative group overflow-hidden">

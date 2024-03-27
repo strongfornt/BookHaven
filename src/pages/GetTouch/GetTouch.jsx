@@ -11,7 +11,11 @@ export default function GetTouch() {
                 Get in <span className="text-success/75">touch</span>
               </h1>
               <p className="pt-2 pb-4">
-                Fill in the form to start a conversation
+              Have questions about our books, or simply want to say hello?
+               We're here to help! Fill out the form below, and we'll get back to you as soon as possible. 
+               Your feedback is valuable to us, and we look forward to hearing from you!
+
+
               </p>
               <div className="space-y-4">
                 <p className="flex items-center">
