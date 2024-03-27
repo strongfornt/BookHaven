@@ -1,65 +1,107 @@
 import { NavLink } from "react-router-dom";
+import { BiLogInCircle } from "react-icons/bi";
+import { useState } from "react";
 
 export default function Nav() {
+  const [menu, setMenu] = useState(false);
   return (
     <>
       <div className="navbar bg-base-100  px-4 lg:px-10 shadow-sm ">
-        <div className="navbar-start">
-          <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+        {/* menu bar start */}
+        <div className=" navbar-start relative gap-2  ">
+          <div className="items-center flex lg:hidden">
+            <label className=" swap swap-rotate bg-transparent border-none ">
+              {/* this hidden checkbox controls the state */}
+              <input type="checkbox" onChange={() => setMenu(!menu)} />
+
+              {/* hamburger icon */}
+
               <svg
+                className="swap-off fill-current"
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
+                width="26"
+                height="26"
+                viewBox="0 0 512 512"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
+                <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" />
               </svg>
-            </div>
-            <ul
-              tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
-            >
-              <NavLink
-                to="/"
-                className={({ isActive }) =>
-                  isActive
-                    ? "border p-2 rounded-lg border-success text-success text-base font-bold "
-                    : "text-base text-black/60 font-bold "
-                }
+
+              {/* close icon */}
+              <svg
+                className="swap-on fill-current"
+                xmlns="http://www.w3.org/2000/svg"
+                width="26"
+                height="26"
+                viewBox="0 0 512 512"
               >
-                <p className="">Home</p>
-              </NavLink>
-              <NavLink
-                to="/listedBooks"
-                className={({ isActive }) =>
-                  isActive
-                    ? "border p-2 rounded-lg border-success text-success text-base font-bold  "
-                    : "text-base text-black/60 font-bold "
-                }
-              >
-                <p>Listed Books</p>
-              </NavLink>
-              <NavLink
-                to="/toRead"
-                className={({ isActive }) =>
-                  isActive
-                    ? "border p-2 rounded-lg border-success text-success text-base font-bold "
-                    : "text-base text-black/60 font-bold "
-                }
-              >
-                <p>Pages to Read</p>
-              </NavLink>
-            </ul>
+                <polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49" />
+              </svg>
+            </label>
           </div>
-          <a className="font-extrabold text-success/75 text-xl lg:text-2xl">Book<span className="text-info/85">Haven</span></a>
+          <ul
+            tabIndex={0}
+            className={`menu absolute top-10 -left-60  menu-sm    text-xl  dropdown-content border-r border-t border-b border-success border-opacity-60 
+               mt-3 z-[1] p-2 shadow-xl bg-base-100 rounded-r-xl w-max  gap-3 py-5  ${
+                 menu && "-left-[16px] duration-300  "
+               }`}
+          >
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                isActive
+                  ? " text-success text-base font-bold "
+                  : "text-base text-black/60 font-bold "
+              }
+            >
+              <p className="relative group overflow-hidden">
+                Home
+                <span
+                  className="h-[2px] -translate-x-44  group-hover:translate-x-0 transition-transform duration-300
+                   w-full bg-[#23BE0A] inline-flex absolute left-0 bottom-0"
+                />
+              </p>
+            </NavLink>
+            <NavLink
+              to="/listedBooks"
+              className={({ isActive }) =>
+                isActive
+                  ? "  text-success text-base font-bold "
+                  : "text-base text-black/60 font-bold "
+              }
+            >
+              <p className="relative group overflow-hidden   ">
+                Listed Books
+                <span
+                  className="h-[2px] -translate-x-44  group-hover:translate-x-0 transition-transform duration-300
+                   w-full bg-[#23BE0A] inline-flex absolute left-0 bottom-0"
+                />
+              </p>
+            </NavLink>
+            <NavLink
+              to="/toRead"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-success text-base font-bold "
+                  : "text-base text-black/60 font-bold "
+              }
+            >
+              <p className="relative group overflow-hidden">
+                Pages to Read
+                <span
+                  className="h-[2px] -translate-x-44  group-hover:translate-x-0 transition-transform duration-300
+                   w-full bg-[#23BE0A] inline-flex absolute left-0 bottom-0"
+                />
+              </p>
+            </NavLink>
+          </ul>
+          <div>
+            <a className="font-extrabold text-success/75 text-2xl">
+              Book<span className="text-info/85">Haven</span>
+            </a>
+          </div>
         </div>
+        {/* menu bar end*/}
+
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 gap-4 items-center ">
             <NavLink
@@ -112,17 +154,46 @@ export default function Nav() {
             </NavLink>
           </ul>
         </div>
-        <div className="navbar-end gap-2">
+        {/* dropdown  ----------------------*/}
+        <div className="flex-none navbar-end lg:hidden">
+          <ul className="menu menu-horizontal px-1">
+            <li>
+              <details>
+                <summary className=" bg-gradient-to-r from-success/75 to-info/75 text-white  font-bold  ">
+                  <BiLogInCircle className="text-lg " />
+                </summary>
+                <ul className="p-2 border-[#23BE0A0D] border rounded-lg z-10 min-w-max space-y-2">
+                  <li>
+                    <a className="relative inline-flex items-center justify-start border border-success btn btn-sm cursor-pointer overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group">
+                      <span className="w-48 h-48 rounded rotate-[-40deg] bg-success absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+                      <span className="relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white">
+                        Sign in
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a className="relative inline-flex items-center justify-start border border-info btn btn-sm overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group">
+                      <span className="w-48 h-48 rounded rotate-[-40deg] bg-info absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+                      <span className="relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white">
+                        Sign up
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </details>
+            </li>
+          </ul>
+        </div>
+        {/* dropdown  ----------------------*/}
+
+        <div className="navbar-end gap-2 hidden lg:flex">
           <a className="relative inline-flex items-center justify-start border border-success btn btn-sm cursor-pointer overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group">
             <span className="w-48 h-48 rounded rotate-[-40deg] bg-success absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
             <span className="relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white">
               Sign in
             </span>
           </a>
-          <a
-            href="#_"
-            className="relative inline-flex items-center justify-start border border-info btn btn-sm overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group"
-          >
+          <a className="relative inline-flex items-center justify-start border border-info btn btn-sm overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group">
             <span className="w-48 h-48 rounded rotate-[-40deg] bg-info absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
             <span className="relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white">
               Sign up
