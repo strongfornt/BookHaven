@@ -10,6 +10,7 @@ export default function BookListTabs() {
   const [tabIndex, setTabIndex] = useState(0);
   const [readData, setReadData] = useState([]);
   const [wishList, setWishList] = useState([]);
+  console.log(tabIndex === 1? "hi":'by');
   useEffect(() => {
     const getReadData = getStoredBook();
     setReadData(getReadData);
@@ -61,13 +62,13 @@ export default function BookListTabs() {
                   Sort By
                 </summary>
                 <ul className="p-2 bg-base-100 rounded-t-none z-10 min-w-max">
-                  <li onClick={() => handleSorting("rating") || handleWishSorting("rating")}>
+                  <li onClick={() => tabIndex ===1 ?  handleWishSorting("rating"):handleSorting("rating") }>
                     <a>Rating</a>
                   </li>
-                  <li onClick={() => handleSorting("pages") || handleWishSorting("pages")}>
+                  <li onClick={() => tabIndex ===1 ? handleWishSorting("pages") :handleSorting("pages") }>
                     <a>Number of pages</a>
                   </li>
-                  <li onClick={() => handleSorting("year") || handleWishSorting("year")}>
+                  <li onClick={() => tabIndex ===1 ?  handleWishSorting("year"):handleSorting("year") }>
                     <a>Published year</a>
                   </li>
                 </ul>

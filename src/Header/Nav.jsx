@@ -44,6 +44,7 @@ export default function Nav() {
                mt-3 z-[1] p-2 shadow-xl bg-base-100 rounded-r-xl w-max  gap-3 py-5  ${
                  menu && "-left-[16px] duration-300  "
                }`}
+              
           >
             <NavLink
               to="/"

@@ -33,7 +33,7 @@ export default function ShapeBarChart({readData}) {
 
   return (
     <>
-      <div className="w-full bg-[#13131308] max-h-60 lg:max-h-fit rounded-xl py-2 flex justify-center items-center mb-5 mt-10 sm:w-auto  ">
+      <div className="md:w-full bg-[#13131308]  rounded-xl py-2 flex justify-center items-center mb-5 mt-10 sm:w-auto  ">
         <BarChart
           width={1200}
           height={500}
