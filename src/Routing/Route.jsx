@@ -5,6 +5,7 @@ import ListedBooks from "../pages/ListedBooks/ListedBooks";
 import PageRead from "../pages/PagestoRead/PageRead";
 import Error from "../pages/Error/Error";
 import BooksDetails from "../pages/BooksDetails/BooksDetails";
+import GetTouch from "../pages/GetTouch/GetTouch";
 
 export const router = createBrowserRouter([
   {
@@ -31,6 +32,10 @@ export const router = createBrowserRouter([
         {
             path:'/toRead',
             element:<PageRead/>
+        },
+        {
+            path:'/GetTouch',
+            element:<GetTouch/>
         }
     ]
   },
