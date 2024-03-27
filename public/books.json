@@ -14,7 +14,7 @@
   },
   {
     "bookId": "2",
-    "bookName": "Echoes of Eternity",
+    "bookName": "Echoes",
     "author": "Maxwell Silver",
     "image": "https://i.postimg.cc/s2T3QhWJ/money.png",
     "review": "Maxwell Silver's 'Echoes of Eternity' is a thought-provoking exploration of time, space, and the human condition. Through intricate storytelling and masterful prose, Silver transports readers across galaxies and millennia, challenging perceptions of reality along the way. With themes of identity, love, and existentialism woven throughout, this sci-fi epic resonates long after the final page. A must-read for fans of mind-bending narratives!",
@@ -27,7 +27,7 @@
   },
   {
     "bookId": "3",
-    "bookName": "Whispers in the Wind",
+    "bookName": "Whispers",
     "author": "Serena Nightingale",
     "image": "https://i.postimg.cc/J7Pjr6ty/hate.png",
     "review": "Serena Nightingale's 'Whispers in the Wind' is a spellbinding romance that sweeps readers off their feet. Set against the backdrop of a windswept coastline, the story follows two souls destined to be together, yet torn apart by circumstance. With lyrical prose and palpable emotion, Nightingale crafts a tale of love, loss, and redemption that lingers in the heart long after the final chapter. A must-read for hopeless romantics!",
@@ -40,7 +40,7 @@
   },
   {
     "bookId": "4",
-    "bookName": "The Forgotten Citadel",
+    "bookName": "Forgotten Citadel",
     "author": "Jonathan Drake",
     "image": "https://i.postimg.cc/SKHz5RQk/schooler.png",
     "review": "Jonathan Drake's 'The Forgotten Citadel' is a sweeping adventure that transports readers to a world of ancient mysteries and untold dangers. As our intrepid heroes embark on a quest to uncover the secrets of a lost civilization, they must confront their deepest fears and overcome seemingly insurmountable obstacles. With pulse-pounding action and richly drawn characters, Drake delivers an epic tale of courage and discovery that will leave readers breathless.",
@@ -53,7 +53,7 @@
   },
   {
     "bookId": "5",
-    "bookName": "Starsong Symphony",
+    "bookName": "Starsong",
     "author": "Aurora Sky",
     "image": "https://i.postimg.cc/SsbJd8Rb/Anotated.png",
     "review": "Aurora Sky's 'Starsong Symphony' is a dazzling fusion of fantasy and music that captivates from the first note to the last. With lush descriptions and a melody of vibrant characters, Sky paints a vivid picture of a world where magic and music intertwine. As our heroes embark on a quest to save their kingdom, they must harness the power of song to defeat an ancient evil. A symphony of adventure that will leave readers spellbound!",
@@ -66,7 +66,7 @@
   },
   {
     "bookId": "6",
-    "bookName": "Chronicles of the Celestial",
+    "bookName": "Celestial",
     "author": "Lunar Frost",
     "image": "https://i.postimg.cc/rFWcCp35/loving.png",
     "review": "Lunar Frost's 'Chronicles of the Celestial Kingdom' is a mesmerizing saga of celestial intrigue and epic battles. With vivid imagery and lyrical prose, Frost transports readers to a world where gods and mortals collide in a struggle for power and redemption. As prophecies unfold and destinies intertwine, readers are drawn into a captivating narrative that defies expectations. A celestial adventure not to be missed!",
@@ -79,7 +79,7 @@
   },
   {
     "bookId": "7",
-    "bookName": "The Alchemist's Legacy",
+    "bookName": "The Alchemist",
     "author": "Cassandra Stone",
     "image": "https://i.postimg.cc/SRRRxpxD/lost.png",
     "review": "Cassandra Stone's 'The Alchemist's Legacy' is a magical journey of self-discovery and transformation. Set in a world where alchemy reigns supreme, the story follows a young apprentice as she unravels the mysteries of her past and embraces her true destiny. With themes of courage, friendship, and the power of belief, Stone weaves a tale that sparkles with wonder and enchantment. A timeless adventure for readers of all ages!",
@@ -92,7 +92,7 @@
   },
   {
     "bookId": "8",
-    "bookName": "Beyond the Horizon",
+    "bookName": "Beyond Horizon",
 "author": "Nathaniel Rivers",
 "image": "https://i.postimg.cc/656gTpw9/cold.png",
 "review": "Nathaniel Rivers' 'Beyond the Horizon' is an enthralling adventure that beckons readers to explore uncharted seas and distant shores. With evocative prose and breathtaking imagery, Rivers paints a vivid picture of a world brimming with mystery and wonder. As our intrepid crew sets sail on a perilous journey, they must navigate treacherous waters and confront their innermost fears. A thrilling odyssey that will leave readers yearning for adventure!",
@@ -105,7 +105,7 @@
 },
 {
 "bookId": "9",
-"bookName": "The Oracle's Prophecy",
+"bookName": "The Oracle",
 "author": "Isabella Nightshade",
 "image": "https://i.postimg.cc/w3Y1fm0m/kevin.png",
 "review": "Isabella Nightshade's 'The Oracle's Prophecy' is a riveting tale of prophecy and destiny that will leave readers spellbound. Set in a world where fate hangs in the balance, the story follows a young oracle as she grapples with visions of a future she cannot escape. With twists and turns at every corner, Nightshade keeps readers guessing until the very end. A prophecy that will change everything.",
