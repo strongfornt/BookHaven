@@ -12,7 +12,10 @@ export default function Nav() {
           <div className="items-center flex lg:hidden">
             <label className=" swap swap-rotate bg-transparent border-none ">
               {/* this hidden checkbox controls the state */}
-              <input type="checkbox" onChange={() => setMenu(!menu)} />
+              <input type="checkbox" onChange={() => setMenu(!menu)} 
+                
+                checked = {menu ? true : false}
+              />
 
               {/* hamburger icon */}
 
@@ -48,10 +51,11 @@ export default function Nav() {
           >
             <NavLink
               to="/"
+              onClick={()=>setMenu(!menu)}
               className={({ isActive }) =>
                 isActive
-                  ? " text-success text-base font-medium "
-                  : "text-base text-black/60 font-medium "
+                  ? " text-success w-fit text-sm font-medium "
+                  : "text-sm w-fit text-black/60 font-medium "
               }
             >
               <p className="relative group overflow-hidden">
@@ -64,10 +68,11 @@ export default function Nav() {
             </NavLink>
             <NavLink
               to="/listedBooks"
+              onClick={()=>setMenu(!menu)}
               className={({ isActive }) =>
                 isActive
-                  ? "  text-success text-base font-bold "
-                  : "text-base text-black/60 font-bold "
+                  ? "  text-success text-sm font-medium w-fit "
+                  : "text-sm text-black/60 font-medium w-fit "
               }
             >
               <p className="relative group overflow-hidden   ">
@@ -80,10 +85,11 @@ export default function Nav() {
             </NavLink>
             <NavLink
               to="/toRead"
+              onClick={()=>setMenu(!menu)}
               className={({ isActive }) =>
                 isActive
-                  ? "text-success text-base font-medium "
-                  : "text-base text-black/60 font-medium "
+                  ? "text-success w-fit text-sm font-medium "
+                  : "text-sm w-fit text-black/60 font-medium "
               }
             >
               <p className="relative group overflow-hidden">
@@ -96,10 +102,11 @@ export default function Nav() {
             </NavLink>
             <NavLink
               to="/popular"
+              onClick={()=>setMenu(!menu)}
               className={({ isActive }) =>
                 isActive
-                  ? "text-success text-sm font-medium "
-                  : "text-sm text-black/60 font-medium "
+                  ? "text-success text-sm font-medium w-fit"
+                  : "text-sm text-black/60 font-medium  w-fit"
               }
             >
               <p className="relative group overflow-hidden">
@@ -112,10 +119,11 @@ export default function Nav() {
             </NavLink>
             <NavLink
               to="/GetTouch"
+              onClick={()=>setMenu(!menu)}
               className={({ isActive }) =>
                 isActive
-                  ? "text-success text-base font-medium "
-                  : "text-base text-black/60 font-medium "
+                  ? "text-success text-sm font-medium w-fit"
+                  : "text-sm text-black/60 font-medium w-fit "
               }
             >
               <p className="relative group overflow-hidden">

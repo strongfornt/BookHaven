@@ -68,12 +68,12 @@ export default function PopularBooks() {
             <li>
               <details>
                 <summary className="bg-[#23BE0A] text-[#FFFFFF] hover:text-[#23BE0A] border hover:border-[#23BE0A] font-bold hover:bg-[#23BE0A0D] ">
-                  Sort By
+                  Sort By Category
                 </summary>
-                <ul className="p-2 bg-base-100 rounded-t-none z-10 min-w-max space-y-2 cursor-pointer">
+                <ul className="p-2 bg-base-100 rounded-t-none z-10 w-full space-y-2 cursor-pointer">
                   <p
                     onClick={() => handleCategory("all")}
-                    className="text-sm text-black/60 font-normal  "
+                    className="text-sm text-black/60 font-normal  w-fit  "
                   >
                     <p className="relative group overflow-hidden">
                       ALL
@@ -85,7 +85,7 @@ export default function PopularBooks() {
                   </p>
                   <p
                     onClick={() => handleCategory("business")}
-                    className="text-sm text-black/60 font-normal  "
+                    className="text-sm text-black/60 font-normal w-fit  "
                   >
                     <p className="relative group overflow-hidden   ">
                       BUSINESS
@@ -97,7 +97,7 @@ export default function PopularBooks() {
                   </p>
                   <p
                     onClick={() => handleCategory("technology")}
-                    className="text-sm text-black/60 font-normal  "
+                    className="text-sm text-black/60 font-normal w-fit "
                   >
                     <p className="relative group overflow-hidden">
                       TECHNOLOGY
@@ -109,7 +109,7 @@ export default function PopularBooks() {
                   </p>
                   <p
                     onClick={() => handleCategory("adventure")}
-                    className="text-sm text-black/60 font-normal  "
+                    className="text-sm text-black/60 font-normal w-fit "
                   >
                     <p className="relative group overflow-hidden">
                       ADVENTURE
@@ -121,7 +121,7 @@ export default function PopularBooks() {
                   </p>
                   <p
                     onClick={() => handleCategory("romantic")}
-                    className="text-sm text-black/60 font-normal  "
+                    className="text-sm text-black/60 font-normal w-fit "
                   >
                     <p className="relative group overflow-hidden">
                       ROMANTIC
@@ -133,7 +133,7 @@ export default function PopularBooks() {
                   </p>
                   <p
                     onClick={() => handleCategory("fiction")}
-                    className="text-sm text-black/60 font-normal  "
+                    className="text-sm text-black/60 font-normal w-fit "
                   >
                     <p className="relative group overflow-hidden">
                       FICTIONAL
