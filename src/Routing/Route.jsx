@@ -6,6 +6,7 @@ import PageRead from "../pages/PagestoRead/PageRead";
 import Error from "../pages/Error/Error";
 import BooksDetails from "../pages/BooksDetails/BooksDetails";
 import GetTouch from "../pages/GetTouch/GetTouch";
+import PopularBooks from "../pages/PopularBooks/PopularBooks";
 
 export const router = createBrowserRouter([
   {
@@ -32,6 +33,11 @@ export const router = createBrowserRouter([
         {
             path:'/toRead',
             element:<PageRead/>
+        },
+        {
+             path:'/popular',
+             element:<PopularBooks/>
+            
         },
         {
             path:'/GetTouch',

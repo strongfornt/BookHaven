@@ -95,6 +95,22 @@ export default function Nav() {
               </p>
             </NavLink>
             <NavLink
+              to="/popular"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-success text-sm font-medium "
+                  : "text-sm text-black/60 font-medium "
+              }
+            >
+              <p className="relative group overflow-hidden">
+                Popular Books
+                <span
+                  className="h-[2px] -translate-x-44  group-hover:translate-x-0 transition-transform duration-300
+                   w-full bg-[#23BE0A] inline-flex absolute left-0 bottom-0"
+                />
+              </p>
+            </NavLink>
+            <NavLink
               to="/GetTouch"
               className={({ isActive }) =>
                 isActive
@@ -142,8 +158,8 @@ export default function Nav() {
               to="/"
               className={({ isActive }) =>
                 isActive
-                  ? " text-success text-base font-medium "
-                  : "text-base text-black/60 font-medium "
+                  ? " text-success text-sm font-medium "
+                  : "text-sm text-black/60 font-medium "
               }
             >
               <p className="relative group overflow-hidden">
@@ -158,8 +174,8 @@ export default function Nav() {
               to="/listedBooks"
               className={({ isActive }) =>
                 isActive
-                  ? "  text-success text-base font-medium "
-                  : "text-base text-black/60 font-medium "
+                  ? "  text-success text-sm font-medium "
+                  : "text-sm text-black/60 font-medium "
               }
             >
               <p className="relative group overflow-hidden   ">
@@ -174,8 +190,8 @@ export default function Nav() {
               to="/toRead"
               className={({ isActive }) =>
                 isActive
-                  ? "text-success text-base font-medium "
-                  : "text-base text-black/60 font-medium "
+                  ? "text-success text-sm font-medium "
+                  : "text-sm text-black/60 font-medium "
               }
             >
               <p className="relative group overflow-hidden">
@@ -187,15 +203,15 @@ export default function Nav() {
               </p>
             </NavLink>
             <NavLink
-              to="/toRead"
+              to="/popular"
               className={({ isActive }) =>
                 isActive
-                  ? "text-success text-base font-medium "
-                  : "text-base text-black/60 font-medium "
+                  ? "text-success text-sm font-medium "
+                  : "text-sm text-black/60 font-medium "
               }
             >
               <p className="relative group overflow-hidden">
-                something
+                Popular Books
                 <span
                   className="h-[2px] -translate-x-44  group-hover:translate-x-0 transition-transform duration-300
                    w-full bg-[#23BE0A] inline-flex absolute left-0 bottom-0"
@@ -206,8 +222,8 @@ export default function Nav() {
               to="/GetTouch"
               className={({ isActive }) =>
                 isActive
-                  ? "text-success text-base font-medium "
-                  : "text-base text-black/60 font-medium "
+                  ? "text-success text-sm font-medium "
+                  : "text-sm text-black/60 font-medium "
               }
             >
               <p className="relative group overflow-hidden">

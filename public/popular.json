@@ -1,0 +1,68 @@
+[
+    {
+      "id": 1,
+      "image": "https://i.postimg.cc/VkxsHMHj/Featured-Book2.png",
+      "bookName": "The Wealth Matrix",
+      "writerName": "John Smith",
+      "category": "Business",
+      "price": 19.99
+    },
+    {
+      "id": 2,
+      "image": "https://i.postimg.cc/Hkv8WBsX/book7.png",
+      "bookName": "The Rise of Silicon ",
+      "writerName": "Emily Johnson",
+      "category": "Technology",
+      "price": 24.99
+    },
+    {
+      "id": 3,
+      "image": "https://i.postimg.cc/wxffpkcY/Featured-Book7.png",
+      "bookName": "Lost in the Wilderness",
+      "writerName": "Sarah Parker",
+      "category": "Adventure",
+      "price": 14.99
+    },
+    {
+      "id": 4,
+      "image": "https://i.postimg.cc/KYBWJytG/Featured-Book1.png",
+      "bookName": "Love Beyond Borders",
+      "writerName": "Michael Adams",
+      "category": "Romantic",
+      "price": 12.99
+    },
+    {
+      "id": 5,
+      "image": "https://i.postimg.cc/cCWj21Q1/Featured-Book12.png",
+      "bookName": "The Quantum Code",
+      "writerName": "Emma Watson",
+      "category": "Fictional",
+      "price": 29.99
+    },
+
+    {
+      "id": 6,
+      "image": "https://i.postimg.cc/7LqBMtMd/Featured-Book11.png",
+      "bookName": "Musical Adventures",
+      "writerName": "Alex Turner",
+      "category": "Adventure",
+      "price": 27.99
+    },
+    {
+      "id": 7,
+      "image": "https://i.postimg.cc/xC1tBsC7/selling-Book.png",
+      "bookName": "A Love Story in Paris",
+      "writerName": "Sophia Miller",
+      "category": "Romantic",
+      "price": 16.99
+    },
+    {
+      "id": 8,
+      "image": "https://i.postimg.cc/wxffpkcY/Featured-Book7.png",
+      "bookName": "The Chronicles",
+      "writerName": "Christopher Black",
+      "category": "Fictional",
+      "price": 22.99
+    }
+  ]
+  
