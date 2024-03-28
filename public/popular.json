@@ -18,7 +18,7 @@
     {
       "id": 3,
       "image": "https://i.postimg.cc/wxffpkcY/Featured-Book7.png",
-      "bookName": "Lost in the Wilderness",
+      "bookName": "In the Wilderness",
       "writerName": "Sarah Parker",
       "category": "Adventure",
       "price": 14.99
@@ -26,7 +26,7 @@
     {
       "id": 4,
       "image": "https://i.postimg.cc/KYBWJytG/Featured-Book1.png",
-      "bookName": "Love Beyond Borders",
+      "bookName": "Love in Bloom",
       "writerName": "Michael Adams",
       "category": "Romantic",
       "price": 12.99
@@ -51,7 +51,7 @@
     {
       "id": 7,
       "image": "https://i.postimg.cc/xC1tBsC7/selling-Book.png",
-      "bookName": "A Love Story in Paris",
+      "bookName": "Passion's Embrace",
       "writerName": "Sophia Miller",
       "category": "Romantic",
       "price": 16.99
@@ -59,7 +59,7 @@
     {
       "id": 8,
       "image": "https://i.postimg.cc/wxffpkcY/Featured-Book7.png",
-      "bookName": "Chronicles of Lumina",
+      "bookName": "The Last Starfall",
       "writerName": "Christopher Black",
       "category": "Fictional",
       "price": 22.99
