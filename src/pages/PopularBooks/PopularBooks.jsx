@@ -1,6 +1,7 @@
 
 import PopularBook from "../../Components/PopularBook/PopularBook";
 import { useEffect, useState } from "react";
+import Spinner from "../../Components/Spinner/Spinner";
 
 export default function PopularBooks() {
   const [popularBooks, setPopularBooks] = useState([]);
@@ -226,11 +227,13 @@ export default function PopularBooks() {
         </ul>
       </div>
 
-      <div className="grid grid-cols-2 lg:grid-cols-4   gap-4 lg:gap-6 mb-4">
-        {popular.map((popular, idx) => (
+      {
+        popular.length < 1 ? <Spinner/> : <div className="grid grid-cols-2 lg:grid-cols-4   gap-4 lg:gap-6 mb-4">
+        {popular?.map((popular, idx) => (
           <PopularBook key={idx} popular={popular} />
         ))}
       </div>
+      }
     </>
   );
 }
