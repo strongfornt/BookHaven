@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+
 import PopularBook from "../../Components/PopularBook/PopularBook";
 import { useEffect, useState } from "react";
 
@@ -56,9 +56,11 @@ export default function PopularBooks() {
         <h1 className="text-center text-sm text-[#131313CC] mt-10 mb-1 ">
           SOME QUALITY ITEMS
         </h1>
-        <h1 className="text-center  font-bold text-4xl ">Popular books</h1>
+        <h1 className="text-center  font-bold text-4xl bg-300%  bg-gradient-to-r from-success/75 via-blue-400/75 to-info/75 text-transparent bg-clip-text animate-gradient
+        
+        ">Popular books</h1>
         <h1 className="mb-5">
-          <span className="h-[2px] w-24 inline-flex bg-black"></span>
+          <span className="h-[2px] w-24 inline-flex bg-success/60"></span>
         </h1>
       </div>
 

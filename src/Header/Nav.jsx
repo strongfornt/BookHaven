@@ -153,8 +153,8 @@ export default function Nav() {
             </li>
           </ul>
           <div>
-            <a className="font-extrabold text-success/75 text-2xl">
-              Book<span className="text-info/85">Haven</span>
+            <a className="font-extrabold  text-2xl  bg-300%  bg-gradient-to-r from-success/75 via-blue-400/75 to-info/75 text-transparent bg-clip-text animate-gradient">
+              BookHaven
             </a>
           </div>
         </div>
